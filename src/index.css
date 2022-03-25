@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+    .link{
+        @apply cursor-pointer hover:underline 
+    }
+     .success_btn{
+        @apply p-2 text-xs md:text-sm  text-black   
+        bg-gradient-to-r from-sky-500 to-indigo-500 shadow-lg shadow-sky-800/30  active:from-blue-500  ring-1 rounded-sm
+         transition-all hover:scale-105
+        focus:outline-none
+    } 
+
+    .addToBasket{
+        @apply p-2 text-xs md:text-sm bg-gradient-to-b text-black
+        bg-cyan-500 shadow-lg shadow-cyan-500/50  active:from-cyan-600 ring-1 rounded-sm
+         hover:scale-110 transition-all
+    }
+
+    .button1{
+        @apply p-2 text-xs md:text-sm  text-black
+        bg-gradient-to-r from-sky-500 to-indigo-500 shadow-lg shadow-sky-800/50 active:from-blue-500  rounded-sm
+         hover:scale-110 transition-all
+    }
+
+    .signCheckbtn{
+        @apply p-2 text-xs md:text-sm bg-gradient-to-b 
+        text-black rounded-sm
+       hover:scale-110 transition-all
+         
+    }
+
+    body{
+        @apply bg-black
+    }
+   
+    .sidebar_sub_items {
+        @apply cursor-pointer hover:text-white hover:font-semibold hover:translate-x-3 transition-transform duration-300;
+      }
+
+    .products_wrap{
+           display:grid;
+           place-items: center;
+           grid-template-columns: auto;
+
+      }
+     
+      .products_wrap .product{
+          background-color: #fff;
+          padding: 15px;
+          margin : 0px 5%;
+          width: 90%;
+          margin-bottom: 10px   ;
+      }  
+      .products_wrap .product img{
+            max-width: 100%;
+            height: 300px;
+            width:100%; 
+            object-fit:contain;
+            object-position: center; 
+              }
+
+      .products_wrap .product h3{
+          margin-bottom: 0px;
+      }
+      
+      .products_wrap .product p{
+        margin: 0px;
+        margin-bottom: 10px;
+        
+    }
+    
+    /* .checkout_wrap{
+            max-width: 600px;
+            margin: 0px 20px ;
+    }
+
+    .payment_form{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .checkout_column{
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .checkout_column label{
+        display:block;
+    }
+    .checkout_column input{
+        width: 100%;
+    }
+
+    .checkout_column select{
+        width: 100%;
+        border-left: 0;
+        border-top:0;
+        border-right:0;
+        padding: 10px 0px    ;
+
+    } */
